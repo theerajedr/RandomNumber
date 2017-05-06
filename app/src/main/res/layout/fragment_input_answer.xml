@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/try_count_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:text="Try : 0"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/hint_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Predict Number"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/answer_number_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Input number 1000 - 9999"
+            android:textAlignment="center"
+            />
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Predict"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:gravity="right|bottom"
+        >
+
+        <Button
+            android:id="@+id/show_number_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Number"
+            />
+
+        <TextView
+            android:id="@+id/correct_number_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
